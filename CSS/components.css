@@ -1,0 +1,156 @@
+/*FullWidth Block Styles*/
+.fullwidthblock_container img.img-responsive {
+    max-height: 500px;
+    object-fit: cover;
+    max-width: inherit;
+    width: 100vw;
+    margin: auto -50vw;
+    left: 50%;
+    right: 50%;
+    position: relative;
+    object-position: center;
+}
+.fullwidthblock_container {position: relative}
+.contentblock_btns {
+    position: relative;
+    background: white;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 40px 50px 0;
+    border-radius: 8px;
+}
+.contentblock_btns > * {text-align: center}
+@media only screen and (max-width: 750px) {
+    .fullwidthblock_container {margin-bottom: 25px}
+}
+/*Banner Styles*/
+.fullwidthbanner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.fullwidthbanner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 0;
+}
+.fullwidthbanner .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+.fullwidthbanner .banner-content h2 {
+    font-size: 3rem!important;
+    color: white !important;
+    font-weight: 600 !important;
+}
+.fullwidthbanner .banner-content h2 .highlight {
+    color: #e6007e;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-left: -5px;
+}
+.fullwidthbanner .banner-content p {
+    font-size: 1.2rem !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+.fullwidthbanner .cta-button {
+    background-color: #50E68C;
+    color: #001b71;
+    border-radius: 5px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+.fullwidthbanner .cta-button:hover {background-color: #14c78f}
+/*FAQ Accordions Styles*/
+h3.custom-faqtitle {
+    border: 1px solid #d9dce0;
+    padding: 12px 15px;
+    font-size: 1.2rem!important;
+    margin: 2rem 0!important;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    font-weight: 500!important;
+}
+.custom-faqtitle[aria-expanded="true"] {
+    border-radius: 4px 4px 0 0 !important;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+h3.custom-faqtitle::after,
+h3.custom-faqtitle[aria-expanded="true"]::after {
+    font-weight: 600;
+    font-family: 'Material Design Icons';
+    color: inherit;
+}
+h3.custom-faqtitle::after {content: '\F0415'}
+h3.custom-faqtitle[aria-expanded="true"]::after {content: '\F0374'}
+.custom-faqpanel {
+    border: 1px solid #d9dce0;
+    background: #fff;
+    border-top: none;
+    margin-top: -2rem;
+    display: none;
+    padding: 15px 15px;
+}
+div#custom-panel-0 * {margin-bottom: 0 !important}
+.custom-faqpanel[hidden] {display: none}
+.custom-faqtitle[aria-expanded="true"] + .custom-faqpanel {
+    display: block;
+    border-radius: 0 0 4px 4px;
+}
+/*Newsletter Styles*/
+section.newsletter-container {
+    background: #E7F0FF;
+    padding: 2rem 0;
+    position: relative;
+    max-width: inherit;
+    width: 100vw;
+    margin: auto -50vw -40px;
+    left: 50%;
+    right: 50%;
+}
+@media only screen and (max-width: 750px) {
+    section.newsletter-container {padding: 2rem!important}
+}
+.newsletter-title {
+    font-weight: 500 !important;
+    display: flex;
+    align-items: center;
+}
+.highlight-bar {
+    margin-right: 8px;
+    color: #e6007e !important;
+    font-size: inherit !important;
+    font-weight: bold !important;
+    width: 7px;
+    background: #e6007e;
+}
+.subscribe-button {
+    background-color: #00205b;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.subscribe-button:hover {background-color: #003399}
+.subscribe-button a {
+    color: white !important;
+    font-weight: 500!important;
+    text-decoration: none !important;
+}
